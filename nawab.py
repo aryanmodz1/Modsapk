@@ -597,7 +597,7 @@ def send_welcome(message):
 
     if is_super_admin(user_id):
         welcome_message = (
-            f"Welcome, Super Admin! Developed By ᚛ @Nawab79 ᚜\n\n"
+            f"Welcome, Super Admin! Developed By ᚛ @team_sad001 ᚜\n\n"
             f"Admin Commands:\n"
             f"/addadmin - Add new admin\n"
             f"/removeadmin - Remove admin\n"
