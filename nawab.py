@@ -26,8 +26,8 @@ KEY_PRICES = {
     'day': 80,   # 80 Rs per day
     'week': 500  # 500 Rs per week
 }
-ADMIN_IDS = [5898718899]
-BOT_TOKEN = "7347144586:AAEDfETmDfr3EmQdfWt7gcKkPFwwtgeNFIM"
+ADMIN_IDS = [5408005513]
+BOT_TOKEN = "7633892545:AAGjlgEuStUZiWYpHejPlFiR77MkdHsafF8"
 thread_count = 900
 packet_size = 9
 ADMIN_FILE = 'admin_data.json'
@@ -833,12 +833,12 @@ def attack_button_handler(message):
     found_user = next((user for user in users if user['user_id'] == user_id), None)
 
     if not found_user:
-        bot.send_message(chat_id, "*𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐫𝐞𝐠𝐢𝐬𝐭𝐞𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @Nawab79 ᚜*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐫𝐞𝐠𝐢𝐬𝐭𝐞𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @team_sad001 ᚜*", parse_mode='Markdown')
         return
 
     valid_until = datetime.fromisoformat(found_user['valid_until'])
     if datetime.now() > valid_until:
-        bot.send_message(chat_id, "*𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @Nawab79 ᚜.*", parse_mode='Markdown')
+        bot.send_message(chat_id, "*𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛ @team_sad001 ᚜.*", parse_mode='Markdown')
         return
 
     try:
@@ -890,7 +890,7 @@ def my_account(message):
         if datetime.now() > datetime.fromisoformat(found_user['valid_until']):
             account_info = (
                 "𝐘𝐨𝐮𝐫 𝐤𝐞𝐲 𝐡𝐚𝐬 𝐞𝐱𝐩𝐢𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐚 𝐧𝐞𝐰 𝐤𝐞𝐲.\n"
-                "Contact ᚛ @Nawab79 ᚜ for assistance."
+                "Contact ᚛ @team_sad001 ᚜ for assistance."
             )
         else:
             account_info = (
@@ -901,7 +901,7 @@ def my_account(message):
                 f"ᴄᴜʀʀᴇɴᴛ ᴛɪᴍᴇ: {current_time}"
             )
     else:
-        account_info = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛@Nawab79 ᚜."
+        account_info = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐫𝐞𝐝𝐞𝐞𝐦 𝐀 𝐤𝐞𝐲 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫:- ᚛@team_sad001 ᚜."
 
     bot.send_message(message.chat.id, account_info)
 
